@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const FolderButton = styled.button`
+export const FolderButton = styled.button`
   display: flex;
   padding 8px 12px;
   flex-direction: column;
@@ -11,4 +11,3 @@ const FolderButton = styled.button`
   cursor: pointer;
   `;
 
-export default FolderButton;

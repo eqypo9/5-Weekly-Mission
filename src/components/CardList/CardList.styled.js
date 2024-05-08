@@ -1,4 +1,8 @@
-.card {
+import styled from 'styled-components';
+
+/* Card 밑 스타일링 다 넣기 */
+/* meta 태그도 넣기 */
+ export const Card = css`
   position: relative;
   font-family: Pretendard;
   border: none;
@@ -7,16 +11,16 @@
   height: 335px;
   padding: 0;
   cursor: pointer;
-}
+`
 
-.cardList {
+export const CardList = css`
   display: grid;
   grid: auto-flow 1fr / repeat(3, 1fr);
   gap: 20px;
   padding: 0;
   justify-items: center;
   list-style-type: none;
-}
+`
 
 .card .image-wrapper {
   width: 340px;
@@ -67,14 +71,14 @@
   font-size: 14px;
 }
 /* Tablet */
-@media screen and (max-width: 1124px) {
+/* @media screen and (max-width: 1124px) {
   .cardList {
     grid: auto-flow 1fr / 1fr 1fr;
   }
-}
+} */
 /* Mobile */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .cardList {
     grid: auto-flow 1fr / 1fr;
   }
-}
+}  

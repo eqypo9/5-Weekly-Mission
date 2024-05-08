@@ -3,6 +3,7 @@ import { getSampleUser, getFolderInfo, getFolderList } from "../api";
 import SharedPage from "../pages/SharedPage";
 import FolderPage from "../pages/FolderPage";
 
+/* hooks에 따로 분리하기 */
 function useUser() {
   const [userInfo, setUserInfo] = useState({ email: "", imgUrl: "" });
   useEffect(() => {
@@ -18,6 +19,7 @@ function useUser() {
   return { userInfo };
 }
 
+/* hooks에 따로 분리하기 */
 function useFolder() {
   const [folderInfo, setFolderInfo] = useState({});
   useEffect(() => {
@@ -33,6 +35,7 @@ function useFolder() {
   return { folderInfo };
 }
 
+/* hooks에 따로 분리하기 */
 function useFolderList() {
   const [folderList, setFolderList] = useState({});
   useEffect(() => {

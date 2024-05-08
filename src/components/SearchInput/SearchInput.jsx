@@ -1,4 +1,4 @@
-import "./SearchInput.css";
+import "./SearchInput.styled.js";
 import { SEARCH_IMAGE } from "./constant";
 
 export const SearchBar = () => {

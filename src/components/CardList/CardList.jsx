@@ -1,8 +1,8 @@
-import "./CardList.css";
+// import "./CardList.css";
 import styled from "styled-components";
 import noImageBackground from "../../assets/images/card-default.png";
-import starIcon from "../../assets/svg/star.svg";
-import kebabIcon from "../../assets/svg/kebab.svg";
+import starIcon from "../../assets/images/star.svg";
+import kebabIcon from "../../assets/images/kebab.svg";
 
 function formatDate(value) {
   const date = new Date(value);
