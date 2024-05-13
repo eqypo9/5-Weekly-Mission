@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { getSampleUser, getFolderInfo, getFolderList } from "../api";
 import SharedPage from "../pages/SharedPage";
@@ -50,23 +51,19 @@ function useFolderList() {
   }, []);
   return { folderList };
 }
+=======
+import "sharing/styles/reset.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { SharedPage } from "pages/SharedPage";
+import { FolderPage } from "pages/FolderPage";
+>>>>>>> 80e587fee179c470a31bfec975b5471ba145454a
 
 function App() {
-  const { userInfo } = useUser();
-  const { folderInfo } = useFolder();
-  const { folderList } = useFolderList();
-
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/shared"
-          element={<SharedPage userInfo={userInfo} folderInfo={folderInfo} />}
-        />
-        <Route
-          path="/folder"
-          element={<FolderPage userInfo={userInfo} folderList={folderList} />}
-        />
+        <Route path="/shared" element={<SharedPage />} />
+        <Route path="/folder" element={<FolderPage />} />
       </Routes>
     </BrowserRouter>
   );
